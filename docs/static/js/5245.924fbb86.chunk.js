@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[5245],{5245:function(a){a.exports=JSON.parse('["huaco","garay","tesar","tunjo","eneal","negra","guado","cebar","niazo","popar","recta","nafra","pozol","buque","tripa","guaba","tobar","doblo","mirla","burka","bofia","doneo","clube","nomon","peine"]')}}]);

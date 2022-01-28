@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[792],{792:function(a){a.exports=JSON.parse('["jugar","teame","apero","baria","murto","verba","greno","modal","cauce","sorba","bizna","arlar","cauda","sitar","icaco","torta","hecha","ajipa","frigo","guiso","ruido","argel","bilao","turbo","volar"]')}}]);

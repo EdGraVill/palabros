@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[3956],{3956:function(a){a.exports=JSON.parse('["timbo","salto","chova","basca","patao","grita","pucha","justa","maste","burga","becar","trafa","acace","ginea","milpa","zabra","caobo","nabal","mundo","jopeo","pinga","zuiza","cacle","masto","tinca"]')}}]);

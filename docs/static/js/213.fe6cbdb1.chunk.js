@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[213],{213:function(a){a.exports=JSON.parse('["gueto","guaje","abeja","aclla","ijiyo","hoque","borna","rigil","cojal","judea","acema","chapa","chano","celta","bocoy","abiso","orzar","tozal","bolso","alijo","ostra","balea","tocte","magma","botar"]')}}]);

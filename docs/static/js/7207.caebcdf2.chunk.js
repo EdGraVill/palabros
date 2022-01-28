@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[7207],{7207:function(a){a.exports=JSON.parse('["habla","hindi","torco","onoto","buceo","algol","subeo","drupa","tifus","breca","gesto","pieza","vitar","junio","boque","fraga","tizna","regar","molsa","ladeo","fruna","tacar","psoas","chuza","ozena"]')}}]);

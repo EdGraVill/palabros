@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[4815],{4815:function(a){a.exports=JSON.parse('["natal","cuaba","rezar","siclo","pucia","cabal","encer","popel","jerez","jaiba","bingo","coito","lupus","pajuz","pajil","suido","monto","zonal","overa","setal","rapar","sedal","corsa","vodca","huevo"]')}}]);

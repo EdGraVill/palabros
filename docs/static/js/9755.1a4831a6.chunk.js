@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[9755],{9755:function(a){a.exports=JSON.parse('["mujer","sural","zubia","glayo","semen","cruza","maoma","cazar","asuso","tijul","rasel","conca","migra","ducas","coque","feral","fatal","sidra","apiri","pobra","majar","osmio","tutsi","temor","arabo"]')}}]);

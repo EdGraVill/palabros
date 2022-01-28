@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[3340],{3340:function(a){a.exports=JSON.parse('["horno","gorja","orate","mosto","mersa","flujo","humor","briol","prana","alade","cucha","antes","perra","oroya","plebe","cobla","delco","pacer","redol","fumar","acato","capea","guisa","oruga","badil"]')}}]);

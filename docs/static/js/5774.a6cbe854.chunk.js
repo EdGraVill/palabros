@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[5774],{5774:function(a){a.exports=JSON.parse('["abano","rodar","musar","lince","boira","retar","berro","jirel","siega","codal","cruel","burda","lisis","sisal","liria","museo","trape","color","puado","balaj","savia","vieja","nunca","labia","medir"]')}}]);

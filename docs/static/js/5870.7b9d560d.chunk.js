@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[5870],{5870:function(a){a.exports=JSON.parse('["zamba","pical","lesna","macla","libre","armar","caico","monte","fruta","larra","buaro","potra","chufa","verde","ciemo","mural","olida","merar","vodka","alcor","aonio","balay","gulag","tenis","tasca"]')}}]);

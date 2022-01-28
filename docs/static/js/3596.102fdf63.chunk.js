@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[3596],{3596:function(a){a.exports=JSON.parse('["pleca","zupia","yerna","mocil","queda","ojota","elote","caoba","clara","senil","falce","freno","masar","bagre","cinia","deque","buzos","muble","rodao","dogre","marca","uviar","telar","delga","naire"]')}}]);
