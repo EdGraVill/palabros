@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[21919],{21919:function(A){A.exports=JSON.parse('["MOCO","LILA","CABO","ANDA","ACTO","ORIN","LUTO","TRES","ASTA","VALE","CADA","ECOS","IRIA","RICA","SEDA","CASE","MIEL","ANOS","CINE","PUSO","DILE","DEJA","HIJA","UNES","BUEN"]')}}]);

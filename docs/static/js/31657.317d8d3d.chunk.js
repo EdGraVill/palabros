@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[31657],{31657:function(A){A.exports=JSON.parse('["TORNEO","PLANTA","BRILLO","PRUEBA","CARTON","TOMARA","DORADA","CAMISA","SAQUEO","AMARGA","EMITIO","AJENOS","LIRIOS","REMOTO","HUNDIA","CINCHA","ESTABA","ABRIGO","TRA\xd1AS","HUESAS","SALIDO","RENDIA","VACIOS","FRESCA","UNICOS"]')}}]);

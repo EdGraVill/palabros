@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[81522],{81522:function(A){A.exports=JSON.parse('["PUERTO","HELADO","DIGALE","NOVELA","AGONIA","FLOJOS","RESECO","HUERTO","TERSAS","AISLAR","RETO\xd1O","MERCED","RAYADO","CRUJIO","ANILLO","USARAN","ACIDEZ","NATURA","ARABES","INVITO","SUMIDO","EMPE\xd1O","ACTIVA","DEPARO","CUOTAS"]')}}]);

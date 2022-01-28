@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[34216],{34216:function(A){A.exports=JSON.parse('["VOLTEO","ABEJAS","GENERO","SEGURA","BILLAR","ALARMO","SUMISO","PARAMO","NACIDO","VENDRA","ROLLOS","QUEMEN","VICTOR","CAJITA","DIGAME","AXILAS","FICHAS","AMANTE","VUELVO","CALIDO","PACION","ATADAS","ATANOR","MISMOS","TAMBOR"]')}}]);

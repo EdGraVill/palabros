@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[41690],{41690:function(A){A.exports=JSON.parse('["PEDIDO","LLORON","GRANDE","INDIOS","PIELES","JARABE","JARETA","TIGRES","HUMANO","PASEAR","CENTRO","LIGERO","DEJABA","LOGICA","GOLETA","CACION","CIEGOS","ROBADO","INTUYO","GARCIA","SOLIDA","PUEBLE","ESCOBA","SALDRA","ROMPER"]')}}]);

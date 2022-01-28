@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[72060],{72060:function(A){A.exports=JSON.parse('["MUERTA","HOSTIL","COMPAS","SOCIAL","RIBERA","TARDAR","CLARAS","MANCHA","SOPLAR","BUCLES","PUREZA","DIVINO","CERVIZ","RENATA","CUBRIA","DESUSE","ACERCA","GRANOS","NACIAN","SUMISA","MORIAN","FIESTA","ASARON","DIVISA","MACIZA"]')}}]);

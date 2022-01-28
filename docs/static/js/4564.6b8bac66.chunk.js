@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[4564],{4564:function(a){a.exports=JSON.parse('["matul","ligar","garra","chipa","isoca","bausa","dumir","rugby","molde","durar","jofor","creso","hopeo","tueca","labio","tusar","cerpa","tuina","urgir","posta","traga","jeque","adufe","judas","troco"]')}}]);

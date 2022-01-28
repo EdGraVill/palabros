@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[8123],{8123:function(a){a.exports=JSON.parse('["queso","cajel","frisa","mugre","huesa","rabal","natri","mugar","chula","jateo","cabra","folla","bazar","tolmo","compi","rodea","nabab","parva","zureo","trial","lejas","barra","acezo","renga","feliz"]')}}]);

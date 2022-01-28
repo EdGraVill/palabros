@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[43830],{43830:function(A){A.exports=JSON.parse('["MARMOL","HERVIR","MONTAR","MADURE","ALTERO","PLAZAS","HABLEN","ENCONO","EVOCAR","FUNDAR","SANTOS","VALSES","CORTOS","TIEMPO","HAZNOS","NITIDO","FIJATE","TAPABA","SUFRIO","NACION","AFRICA","COMIDO","FRUTAS","JUEVES","VARIOS"]')}}]);

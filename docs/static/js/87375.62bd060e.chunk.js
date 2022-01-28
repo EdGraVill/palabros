@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[87375],{87375:function(A){A.exports=JSON.parse('["HEREJE","INERME","FRASCO","USADAS","CORTAR","TRAMPA","APARTE","ALEGRO","PUESTA","BRINDO","CIFRAR","MU\xd1ECA","VALIDO","LIGERA","FIELES","MADURO","LUCIDA","OPONIA","TRATAR","VUELTA","PAGADO","PREVIO","TRAVES","ACABAN","TEJIDA"]')}}]);

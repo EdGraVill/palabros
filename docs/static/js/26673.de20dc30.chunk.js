@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[26673],{26673:function(A){A.exports=JSON.parse('["DESDEN","ALERTA","REBECA","PERNOS","MANDAR","ERUCTO","HOMBRE","LEERLA","PATADA","BUENOS","USANDO","REINOS","CRISTO","EMPEZO","PERLAS","ASUMIR","PUNZON","AFECTO","DETUVO","LARVAS","LONIAL","JUNIOS","VUELVA","ARIDAS","SALMOS"]')}}]);

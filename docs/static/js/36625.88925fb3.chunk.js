@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[36625],{36625:function(O){O.exports=JSON.parse('["CALVO","RECTO","VERTE","LLEVO","RAYOS","CIELO","REJAS","TEJIA","CAPAZ","RUBIO","POBRE","CINTA","SE\xd1AL","OPUSO","SERIO","MUERE","SOLIA","OTROS","SALON","ARBOL","FRASE","REINO","BURRO","CEJAS","VARAS"]')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[5694],{5694:function(a){a.exports=JSON.parse('["cacto","rispa","dseta","sigua","frete","rueda","bongo","guaya","carao","reaje","tueco","lieva","epoda","fetua","macha","almuz","mella","shock","atroz","bular","muelo","pelta","aptar","testa","final"]')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[3319],{3319:function(A){A.exports=JSON.parse('["CEDIDO","ZAFARA","APUNTO","RECELO","DALIAS","TEXTOS","CORONA","ODIADO","SUCIAS","DIBUJO","MANGAS","CASERA","COLICO","MULATA","REPOSO","BA\xd1ABA","GITANO","ASPERO","MAXIMA","LIRICA","CRUCES","VENDIA","METIDA","RUINAS","LANDAS"]')}}]);

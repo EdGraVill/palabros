@@ -19,7 +19,7 @@ const Row: VoidFunctionComponent<Props> = ({ checkWord, isDisabled, wordLength =
   const onChange = useCallback((event: ChangeEvent<HTMLInputElement>) => {
     const newLetter = (event.currentTarget.value ?? '').toUpperCase();
     
-    if (/[A-Z]/.test(newLetter)) {
+    if (/[A-ZÑ]/.test(newLetter)) {
       setWord((currentValue) => currentValue.length < wordLength ? `${currentValue ?? ''}${newLetter}` : currentValue);
     }
   }, [wordLength]);

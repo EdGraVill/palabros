@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[9760],{9760:function(a){a.exports=JSON.parse('["tajar","cenit","finca","ponto","otero","suero","santa","tunta","miope","parla","dedeo","sobar","truja","pulpo","fuete","timar","pacay","nizam","tarca","tweed","babor","debla","topil","zalea","aster"]')}}]);

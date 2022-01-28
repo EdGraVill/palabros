@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[45892],{45892:function(A){A.exports=JSON.parse('["VIBORA","FONDOS","UNIRSE","GRINGO","GUERRA","COLERA","SANGRE","ACABAR","RUBIES","FIEBRE","PIRATA","ANSIAS","CRISIS","EMPINE","SABILA","GERMAN","AJENAS","ACENTO","EFICAZ","CUANTA","ASADOS","METIDO","ARMABA","CORCHO","VAYASE"]')}}]);

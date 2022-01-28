@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[36435],{36435:function(A){A.exports=JSON.parse('["TOTUMA","HEMBRA","CLARIN","GRACIA","DEJEME","TEMELE","COSTOS","PASTAS","SIERRA","SONORO","FRENTE","PASARA","SALTOS","NOVIOS","VIVIAN","ENSE\xd1O","HUELLA","TALEGA","VUELCO","IMPETU","HONGOS","ENORME","SILLAS","ALTURA","AFEITO"]')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[333],{333:function(a){a.exports=JSON.parse('["ocumo","cesta","notro","carba","cafiz","cenco","efeto","rodal","usteo","pagro","pirco","morga","corro","filia","talio","enojo","lande","marlo","folga","chale","mugle","eraje","vetar","venir","piada"]')}}]);

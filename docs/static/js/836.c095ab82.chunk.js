@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[836],{836:function(O){O.exports=JSON.parse('["COLUMNA","DERROTA","ESCLAVA","COMPLOT","TOMARSE","LETRERO","PUPILAS","CORDIAL","MENUDAS","DEJARLE","IMPETUS","RETRASO","CONTIGO","OBREROS","OBTENER","CASARON","AGENTES","PUBLICO","MARINOS","ACUSADO","CASARTE","EXPLORO","FICHERO","SUGIRIO","MUSICAL"]')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[20316],{20316:function(A){A.exports=JSON.parse('["TIFICO","ADEMAS","BURLAR","TOLEDO","TIERNO","USADOS","ANTIER","MEDIAR","BLANCO","TIENEN","CLAVAR","FINCAS","LIVIDO","REZABA","ROMANA","VENGAS","HABLAS","CASCOS","ORILLA","RIESGO","BARATA","NORMAS","COBRES","OREJAS","AMABAN"]')}}]);

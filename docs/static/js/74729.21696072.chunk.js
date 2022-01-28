@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[74729],{74729:function(A){A.exports=JSON.parse('["SECABA","CHOFER","SERENO","RINCON","CUIDEN","HARIAN","REUNIR","CANTOS","CARGOS","CARMIN","QUERIA","COMINO","NOCION","PATRON","RESE\xd1A","BASURA","COCINA","CUIDAR","RAPADA","LEYERA","TORCER","CIERTA","LOCUAZ","NOMBRE","ASALTE"]')}}]);

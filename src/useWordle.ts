@@ -1,7 +1,20 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 
-const randomFileName = Math.abs(Math.floor(Math.random() * 131) - 1);
-const randomWordLine = Math.abs(Math.floor(Math.random() * 26) - 1);
+export const words = {
+  4: 21,
+  5: 50,
+  6: 71,
+  7: 97,
+  8: 106,
+  9: 91,
+  10: 76,
+};
+
+function getRandomInt(min: number, max: number): number {
+  return Math.floor(Math.random() * (max - min) + min);
+}
+
+const randomWordLine = getRandomInt(0, 25);
 
 export type Flag = 'green' | 'yellow' | 'gray';
 
@@ -12,7 +25,7 @@ export interface WordChecker {
   }
 }
 
-function createWordChecker(word: string, nthTrySetter: (nthTry: number) => void): WordChecker {
+function createWordChecker(word: string, wordLength: number, nthTryMax: number, nthTrySetter: (nthTry: number) => void): WordChecker {
   let nthTry = 0;
   const letters = word.toUpperCase().split('');
 
@@ -20,14 +33,14 @@ function createWordChecker(word: string, nthTrySetter: (nthTry: number) => void)
     let isWinner = true;
     const receivedLetters = receivedWord.toUpperCase().split('');
 
-    if (receivedLetters.length !== 5) {
+    if (receivedLetters.length !== wordLength) {
       throw new Error('Invalid input word');
     }
 
     nthTry += 1;
     nthTrySetter(nthTry);
     
-    if (nthTry > 5) {
+    if (nthTry > nthTryMax) {
       throw new Error('You loose');
     }
 
@@ -45,8 +58,8 @@ function createWordChecker(word: string, nthTrySetter: (nthTry: number) => void)
       return 'gray';
     });
 
-    if (nthTry === 5) {
-      console.log(word)
+    if (process.env.NODE_ENV !== 'production' && nthTry === nthTryMax) {
+      console.log(word);
     }
 
     return {
@@ -56,26 +69,29 @@ function createWordChecker(word: string, nthTrySetter: (nthTry: number) => void)
   }
 }
 
-export default function useWordle(): [isLoading: boolean, wordChecker: WordChecker, nthTry: number] {
+export default function useWordle(wordLength: keyof typeof words = 5, nthTryMax = 5): [isLoading: boolean, wordChecker: WordChecker, nthTry: number] {
   const [isLoading, setLoadingState] = useState(true);
   const [nthTry, setNthTry] = useState(0);
-  const wordChecker = useRef<WordChecker>(createWordChecker('', setNthTry));
+  const wordChecker = useRef<WordChecker>(createWordChecker('', wordLength, nthTryMax, setNthTry));
+  const randomFileName = useMemo(() => getRandomInt(0, words[wordLength]), [wordLength]);
 
   const setWordChecker = useCallback(async () => {
     try {
-      const file = await import(`./words/${randomFileName}.json`);
+      const file = await import(`./words/${wordLength}/${randomFileName}.json`);
       const word = Array.from(file)[randomWordLine] as string;
 
-      wordChecker.current = createWordChecker(word, setNthTry);
+      wordChecker.current = createWordChecker(word, wordLength, nthTryMax, setNthTry);
     } catch (error) {
       await setWordChecker();
     }
-  }, []);
+  }, [nthTryMax, randomFileName, wordLength]);
 
   useEffect(() => {
+    setLoadingState(true);
+
     setWordChecker().then(() => {
       setLoadingState(false);
-    })
+    });
   }, [setWordChecker]);
 
   return [isLoading, wordChecker.current, nthTry];

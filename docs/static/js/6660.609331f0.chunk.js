@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[6660],{6660:function(a){a.exports=JSON.parse('["lacre","rayar","capio","quemo","fleme","coach","muria","yerba","trefe","deesa","rever","circo","sumir","favor","tulpa","urato","cacha","lacra","gante","villa","maesa","anjeo","flato","gasto","papeo"]')}}]);

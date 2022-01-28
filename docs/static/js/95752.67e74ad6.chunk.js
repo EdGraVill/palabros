@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[95752],{95752:function(A){A.exports=JSON.parse('["MOLINO","DECIMA","CULATA","RESTAS","ROSADA","SALIVA","TURCOS","YERMOS","TIBIOS","TENIAN","TIERNA","FULGOR","CRIADO","LLEVAR","SACARA","SONDEO","GAMUZA","TRAIGO","MECHON","ANIMAL","CRESPI","CAYERA","BENJUI","VIENTO","DUDABA"]')}}]);

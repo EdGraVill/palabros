@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[81948],{81948:function(A){A.exports=JSON.parse('["LAVADO","LEVITA","ENREDO","CARIBE","RICINO","SUELTE","CALZON","ZAPATO","SALIAN","RETIRO","CUELLO","ALIVIO","MAGICA","MONEDA","PETREO","GRITOS","AVIDEZ","HUESOS","PEDIAN","CARNES","PERSAS","ACUDIR","PLACER","SABRAS","COGOTE"]')}}]);

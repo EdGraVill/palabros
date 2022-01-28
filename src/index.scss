@@ -92,6 +92,11 @@ body {
       margin: 0 0.25rem;
       text-align: center;
       width: 2rem;
+
+      &.special {
+        line-height: 0.75rem;
+        width: 3.25rem;
+      }
   
       &:focus {
         background-color: #393E46;

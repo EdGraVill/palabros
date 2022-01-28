@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[7201],{7201:function(a){a.exports=JSON.parse('["murta","mapeo","danza","rival","piojo","cacuy","lilac","pista","cetil","morir","burla","fauno","fiemo","gneis","fiana","rifle","bloca","fauna","banyo","tibor","tuero","porte","rueca","fator","gamma"]')}}]);

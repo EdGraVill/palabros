@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[1637],{1637:function(a){a.exports=JSON.parse('["nocir","pelea","tabea","septo","agror","apear","circe","buces","fluir","mufla","birla","afore","ayuso","flema","valla","ondeo","coxis","taina","zanca","jijeo","peque","aocar","alosa","tamal","clica"]')}}]);

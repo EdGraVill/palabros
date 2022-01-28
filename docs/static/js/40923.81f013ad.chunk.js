@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[40923],{40923:function(A){A.exports=JSON.parse('["FORMAL","ASUSTO","ASTROS","CUALES","RONCAR","CHORRO","VIRGEN","CINTAS","ESCASO","GARZOS","ARCAYA","FRESCO","HERVIA","ASIDUO","RELEGO","NIVELE","AMARLA","PUESTO","VERLES","PASTEL","RABANO","TROPEL","IGNORE","USARLA","MEZCLO"]')}}]);

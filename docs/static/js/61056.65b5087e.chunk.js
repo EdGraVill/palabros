@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[61056],{61056:function(A){A.exports=JSON.parse('["QUITO","SISAS","DOGAL","RODAR","AGUAS","GRASA","ANIMO","HEMOS","GOLPE","ANDAS","YERNO","VALLE","FANGO","DENSA","MATIZ","LETRA","NORTE","FERIA","CULAR","SABOR","RAYAS","MITAD","JABON","PANES","ESTOY"]')}}]);

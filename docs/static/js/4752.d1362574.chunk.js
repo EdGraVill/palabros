@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[4752],{4752:function(a){a.exports=JSON.parse('["pesor","jorro","gansa","cinto","pasco","vahar","hiato","padre","rango","motil","cauca","radar","fibra","vuelo","tesla","colpe","plata","porta","jujeo","ojera","dogal","ferri","filis","tecol","aduar"]')}}]);

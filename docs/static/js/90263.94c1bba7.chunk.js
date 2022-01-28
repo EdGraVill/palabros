@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[90263],{90263:function(A){A.exports=JSON.parse('["SABIDO","FUERON","VIAJEN","MANERA","REGALO","OTORGO","PEGADO","OLVIDO","RAPIDO","AUNQUE","IRREAL","CUMBRE","MORTAL","CIEGAS","CRECER","GALEON","CABIAN","SEVERA","BURRAS","TIMIDO","CONFIO","NEGRAS","PUEBLO","RITUAL","LINEAL"]')}}]);

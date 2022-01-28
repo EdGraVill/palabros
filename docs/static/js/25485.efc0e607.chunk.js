@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[25485],{25485:function(O){O.exports=JSON.parse('["TIESO","QUEDA","AYUDO","TRAPO","PETUA","RICAS","PRIMO","BREVE","PACOS","CALDO","EPOCA","BRUNO","RICOS","SALTO","LUGAR","DESDE","DARSE","MULGO","RUEDA","CURSO","VIVOS","MENOS","NOVIA","EVOCO","CINCO"]')}}]);

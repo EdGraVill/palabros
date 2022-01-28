@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[40609],{40609:function(A){A.exports=JSON.parse('["FERVOR","VICIOS","PEORES","PLATOS","MILLAR","ESTIRO","REDUJO","POLIPO","FRUTOS","SOLIDO","CARGAR","INDUJO","INDOLE","CAMPAL","HASTIO","TRATES","SIRVIO","LAPIDA","PALOMA","CUANTO","RECIEN","TOALLA","AZUFRE","DORSAL","ALARMA"]')}}]);

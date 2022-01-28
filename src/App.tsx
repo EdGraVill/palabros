@@ -4,7 +4,8 @@ import Keyboard from './Keyboard';
 import { useCallback, useState } from 'react';
 
 function App() {
-  const [isLoading, checkWord, nthTry] = useWordle();
+  const [nthTryMax, setNthTryMax] = useState(5);
+  const [isLoading, checkWord, nthTry] = useWordle(5, nthTryMax);
   const [isWinner, setWinnerState] = useState(false);
   const [letterStatus, setLetterStatus] = useState<Record<string, Flag>>({})
 
@@ -32,11 +33,9 @@ function App() {
   return (
     <div className="App">
       <header className="container">
-        <Row checkWord={onCheckWord} isDisabled={isWinner || isLoading || nthTry !== 0} />
-        <Row checkWord={onCheckWord} isDisabled={isWinner || isLoading || nthTry !== 1} />
-        <Row checkWord={onCheckWord} isDisabled={isWinner || isLoading || nthTry !== 2} />
-        <Row checkWord={onCheckWord} isDisabled={isWinner || isLoading || nthTry !== 3} />
-        <Row checkWord={onCheckWord} isDisabled={isWinner || isLoading || nthTry !== 4} />
+        {Array.from({ length: nthTryMax }).map((_, ix) => (
+          <Row checkWord={onCheckWord} key={ix} isDisabled={isWinner || isLoading || nthTry !== ix} />
+        ))}
         <Keyboard letterStatus={letterStatus} />
       </header>
     </div>

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[81862],{81862:function(A){A.exports=JSON.parse('["POLVOS","CUENCO","CASITA","EXISTE","EDADES","NITIDA","MEDIDA","BA\xd1ARA","CONTRA","CORRIO","PESABA","VERDIN","FIGURA","DIERAN","PAISES","JUICIO","MANEJE","GLOBOS","GANABA","METODO","HOMBRO","SABADO","GLORIA","ALZADA","IMAGEN"]')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[5119],{5119:function(a){a.exports=JSON.parse('["cerra","fisco","corps","cocer","lodra","guiye","purga","bizma","error","manal","cruce","perla","fusor","royal","credo","salma","secre","mallo","cimpa","breva","foral","lasca","izado","menor","glial"]')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[67044],{67044:function(E){E.exports=JSON.parse('["VERSE","DERNO","FUSIL","COSER","ROLLO","MANDE","PONIA","FIRMA","MUERO","SALMO","DICHO","LIBRE","PASOS","SE\xd1AS","CRUDA","PARES","NUEVE","METIO","CHINO","PESAR","BUENO","POEMA","CURAS","BETUN","SUCIO"]')}}]);

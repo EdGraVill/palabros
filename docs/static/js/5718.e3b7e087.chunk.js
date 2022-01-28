@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[5718],{5718:function(a){a.exports=JSON.parse('["neura","aroma","gaita","ingre","marro","vinal","farte","adrar","fijar","sique","rugir","habiz","socaz","pauta","tupir","bucio","tineo","priva","mesar","vidro","yacer","trepe","jetar","lerda","viaje"]')}}]);

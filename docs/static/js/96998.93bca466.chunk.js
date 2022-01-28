@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[96998],{96998:function(A){A.exports=JSON.parse('["LASFA","LATAS","CUYAS","VIVIA","VENTA","PIEZA","HIJOS","GASTO","GENTE","DIERA","ORDEN","BUENA","ARIDO","GOTAS","BRAZO","CUTIS","ISAZA","CANTO","SOLOS","CABAL","TINTA","TENUE","PENCA","DEBIL","HIJAS"]')}}]);

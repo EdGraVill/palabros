@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[8081],{8081:function(O){O.exports=JSON.parse('["PIDIO","DIRIA","VARON","FRUTA","ARROZ","PENSE","VACIA","VALSE","TOCAR","JUNTO","MONJA","PAILA","PATIO","CLAVO","POTES","DATOS","QUESO","FURIA","HABIL","SERLO","BUSCO","DEMAS","OTO\xd1O","RIZOS","ACERO"]')}}]);

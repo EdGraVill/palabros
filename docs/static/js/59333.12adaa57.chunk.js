@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[59333],{59333:function(O){O.exports=JSON.parse('["TAREAS","CASADO","ADULTO","APRETO","JUBILO","TRONCO","GARZAS","MOSTRO","CHAROL","DORMIA","ACIDOS","JUECES","COCIDO","DOTADO","ESTUVO","FISICO","ACOSTO","SORTEO","VIEJAS","LODOSA","PESADO","INTIMA","PABILO","RAFAEL","DEDUJO"]')}}]);

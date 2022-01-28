@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[10246],{35230:function(A){A.exports=JSON.parse('["BRUCES","HILERA","PERDIO","CAUCHO","FABULA","TENGAN","BURDEL","ENROLO","FRENOS","ORIGEN","HUNDIO","NORMAL","DIVINA","CHIPRE","SEGUIR","POBRES","FUGABA","MAUSER","BRECHA","MA\xd1ANA","SIONES","DESATO","HAZA\xd1A","SE\xd1ALO","CLUECA"]')}}]);

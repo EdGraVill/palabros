@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkpalabros=self.webpackChunkpalabros||[]).push([[4014],{4014:function(a){a.exports=JSON.parse('["barza","yesca","nones","loteo","tudel","oeste","sioux","zagua","pejae","bambi","cagar","banal","moche","multa","bossa","selva","cerro","tambo","pulso","blues","alazo","sesga","optar","acoso","fufar"]')}}]);
