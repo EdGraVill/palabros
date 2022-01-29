@@ -1,4 +1,5 @@
-import { ChangeEvent, KeyboardEvent, useCallback, useEffect, useRef, useState, VoidFunctionComponent } from 'react';
+import classNames from 'classnames';
+import { useCallback, useEffect, useRef, useState, VoidFunctionComponent } from 'react';
 import { Flag, WordChecker } from './useWordle';
 
 interface Props {
@@ -10,29 +11,35 @@ interface Props {
 const Row: VoidFunctionComponent<Props> = ({ checkWord, isDisabled, wordLength = 5 }) => {
   const [word, setWord] = useState('');
   const [result, setResult] = useState<Flag[]>([]);
-  const inputs = useRef<HTMLInputElement[]>(Array.from({ length: wordLength }));
+  const inputs = useRef<HTMLDivElement[]>(Array.from({ length: wordLength }));
 
-  const onFocus = useCallback(() => {
-    inputs.current[word.length >= wordLength ? wordLength - 1 : word.length].focus();
-  }, [word, wordLength]);
+  const onDocumentKeyup = useCallback((event: globalThis.KeyboardEvent) => {
+      const newLetter = (event.key ?? '').toUpperCase();
 
-  const onChange = useCallback((event: ChangeEvent<HTMLInputElement>) => {
-    const newLetter = (event.currentTarget.value ?? '').toUpperCase();
-    
-    if (/[A-ZÑ]/.test(newLetter)) {
-      setWord((currentValue) => currentValue.length < wordLength ? `${currentValue ?? ''}${newLetter}` : currentValue);
-    }
-  }, [wordLength]);
-  
-  const onKeyUp = useCallback((event: KeyboardEvent<HTMLInputElement>) => {
-    if (event.key === 'Backspace') {
-      setWord((currentValue) => currentValue.length ? currentValue.substring(0, currentValue.length - 1) : '');
-    }
+      if (event.key === 'Backspace') {
+        setWord((currentWord) => currentWord.length ? currentWord.substring(0, currentWord.length - 1) : '');
+      } else if (event.key === 'Enter') {
+        setWord((currentWord) => {
+          if (currentWord.length === wordLength) {
+            setResult((currentResult) => currentResult.length ? currentResult : checkWord(currentWord).result);
+          }
 
-    if (event.key === 'Enter' && word.length === wordLength) {
-      setResult(checkWord(word).result);
+          return currentWord;
+        });
+      } else if (newLetter.length === 1 && /[A-ZÑ]/.test(newLetter)) {
+        setWord((currentWord) => currentWord.length < wordLength ? `${currentWord ?? ''}${newLetter}` : currentWord);
+      }
+  }, [checkWord, wordLength]);
+
+  useEffect(() => {
+    if (!isDisabled) {
+      document.addEventListener('keyup', onDocumentKeyup);
+
+      return () => {
+        document.removeEventListener('keyup', onDocumentKeyup);
+      }
     }
-  }, [word, checkWord, wordLength]);
+  }, [isDisabled, onDocumentKeyup]);
 
   useEffect(() => {
     if (word.length < wordLength) {
@@ -49,17 +56,17 @@ const Row: VoidFunctionComponent<Props> = ({ checkWord, isDisabled, wordLength =
   return (
     <div className='row'>
       {inputs.current.map((_, ix) => (
-        <input
-          className={result[ix] ?? ''}
-          disabled={isDisabled}
+        <div
+          className={classNames([
+            'cell',
+            result[ix] ?? '',
+            { focus: !isDisabled && (word.length === ix || (word.length - 1 === ix && ix === wordLength - 1)) },
+          ])}
           key={ix}
-          onChange={onChange}
-          onFocus={onFocus}
-          onKeyUp={onKeyUp}
           ref={element => inputs.current[ix] = element!}
-          type="text"
-          value={word[ix] ?? ''}
-        />
+        >
+          {word[ix] ?? ''}
+        </div>
       ))}
     </div>
   )
