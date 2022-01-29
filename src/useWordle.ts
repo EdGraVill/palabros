@@ -1,13 +1,13 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 
 export const words = {
+  10: 76,
   4: 21,
   5: 50,
   6: 71,
   7: 97,
   8: 106,
   9: 91,
-  10: 76,
 };
 
 function getRandomInt(min: number, max: number): number {
@@ -20,12 +20,17 @@ export type Flag = 'green' | 'yellow' | 'gray';
 
 export interface WordChecker {
   (word: string): {
-    result: Flag[];
     isWinner: boolean;
-  }
+    result: Flag[];
+  };
 }
 
-function createWordChecker(word: string, wordLength: number, nthTryMax: number, nthTrySetter: (nthTry: number) => void): WordChecker {
+function createWordChecker(
+  word: string,
+  wordLength: number,
+  nthTryMax: number,
+  nthTrySetter: (nthTry: number) => void,
+): WordChecker {
   let nthTry = 0;
   const letters = word.toUpperCase().split('');
 
@@ -39,7 +44,7 @@ function createWordChecker(word: string, wordLength: number, nthTryMax: number, 
 
     nthTry += 1;
     nthTrySetter(nthTry);
-    
+
     if (nthTry > nthTryMax) {
       throw new Error('You loose');
     }
@@ -65,11 +70,14 @@ function createWordChecker(word: string, wordLength: number, nthTryMax: number, 
     return {
       isWinner,
       result,
-    }
-  }
+    };
+  };
 }
 
-export default function useWordle(wordLength: keyof typeof words = 5, nthTryMax = 5): [isLoading: boolean, wordChecker: WordChecker, nthTry: number] {
+export default function useWordle(
+  wordLength: keyof typeof words = 5,
+  nthTryMax = 5,
+): [isLoading: boolean, wordChecker: WordChecker, nthTry: number] {
   const [isLoading, setLoadingState] = useState(true);
   const [nthTry, setNthTry] = useState(0);
   const wordChecker = useRef<WordChecker>(createWordChecker('', wordLength, nthTryMax, setNthTry));
