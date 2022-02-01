@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import Header from './Header';
 import Keyboard from './Keyboard';
 import Row from './Row';
@@ -6,12 +6,22 @@ import type { WordLength } from './useWordle';
 import useWordle from './useWordle';
 
 function App() {
-  const [wordLength, setWordLength] = useState<WordLength>(5);
-  const [nthTryMax, setNthTryMax] = useState(5);
+  const [wordLength, setWordLength] = useState<WordLength>(
+    Number(localStorage.getItem('wordLength') ?? 5) as WordLength,
+  );
+  const [nthTryMax, setNthTryMax] = useState(Number(localStorage.getItem('nthTryMax') ?? 5));
   const [isLoading, checkWord, nthTry, newGame] = useWordle(wordLength, nthTryMax);
   const [isWinner, setWinnerState] = useState(false);
   const [letterStatus, setLetterStatus] = useState<Record<string, string>>({});
   const [seed, setSeed] = useState<number[]>(Array.from({ length: nthTryMax }).map(Math.random));
+
+  useEffect(() => {
+    localStorage.setItem('wordLength', wordLength.toString());
+  }, [wordLength]);
+
+  useEffect(() => {
+    localStorage.setItem('nthTryMax', nthTryMax.toString());
+  }, [nthTryMax]);
 
   const onNewGame = useCallback(() => {
     setWinnerState(false);

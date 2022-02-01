@@ -47,6 +47,11 @@ header {
       padding: .5rem 1rem;
       transition: border 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
       user-select: none;
+
+      @media screen and (max-width: 420px) {
+        font-size: 0.7rem;
+        max-width: 5rem;
+      }
   
       &:hover {
         border: 3px solid #84C69B;
@@ -56,7 +61,6 @@ header {
 
   & > .controls {
     place-self: center end;
-    max-width: calc((95vw / 3) - 1rem);
 
     & > label {
       align-items: center;
@@ -71,12 +75,20 @@ header {
       margin: 0.35rem 0;
       padding: 0.5rem;
 
+      @media screen and (max-width: 420px) {
+        font-size: 0.6rem;
+      }
+
       & > select {
         background-color: transparent;
         border: 0;
         color: #EEEEEE;
-        margin-left: 0.5rem;
+        margin: 0;
         text-align: center;
+
+        @media screen and (max-width: 420px) {
+          font-size: 0.6rem;
+        }
 
         & > option {
           color: #393E46;
