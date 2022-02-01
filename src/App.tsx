@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 import Header from './Header';
+import Installer from './Installer';
 import Keyboard from './Keyboard';
 import Row from './Row';
 import type { WordLength } from './useWordle';
@@ -67,6 +68,7 @@ function App() {
 
   return (
     <div className="App">
+      <Installer />
       <Header
         newGame={onNewGame}
         nthTryMax={nthTryMax}

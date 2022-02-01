@@ -23,6 +23,60 @@ body {
   min-width: 100vw;
 }
 
+.modal {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #EEEEEE;
+  display: none;
+  justify-content: center;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+
+  &.isVisible {
+    display: flex;
+  }
+
+  & > div {
+    background-color: #393E46;
+    border-radius: 1vh;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    max-width: calc(60vh - 6rem);
+    padding: 0 3rem;
+    width: calc(100vw - 1vh);
+
+    & > * {
+      margin: 2rem 0;
+      text-align: center;
+    }
+
+    & > .buttons {
+      align-items: center;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-evenly;
+
+      & > button {
+        align-items: center;
+        background-color: #222831;
+        border: 3px solid #222831;
+        border-radius: 0.5vh;
+        color: #EEEEEE;
+        font-weight: bolder;
+        justify-content: center;
+        padding: .5rem 1rem;
+        transition: border 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        user-select: none;
+  
+        &:hover {
+          border: 3px solid #84C69B;
+        }
+      }
+    }
+  }
+}
+
 header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

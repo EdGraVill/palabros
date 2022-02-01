@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/palabros/static/css/main.01d6c47a.css",
-    "main.js": "/palabros/static/js/main.149c9488.js",
+    "main.css": "/palabros/static/css/main.ccb382e7.css",
+    "main.js": "/palabros/static/js/main.49123afe.js",
     "static/js/5874.671ca4e9.chunk.js": "/palabros/static/js/5874.671ca4e9.chunk.js",
     "static/js/14469.f38d5f93.chunk.js": "/palabros/static/js/14469.f38d5f93.chunk.js",
     "static/js/19266.eac729ca.chunk.js": "/palabros/static/js/19266.eac729ca.chunk.js",
@@ -514,12 +514,13 @@
     "static/js/76818.6c405375.chunk.js": "/palabros/static/js/76818.6c405375.chunk.js",
     "static/js/16891.f8ecb4ed.chunk.js": "/palabros/static/js/16891.f8ecb4ed.chunk.js",
     "static/js/1839.0f1b7a07.chunk.js": "/palabros/static/js/1839.0f1b7a07.chunk.js",
+    "service-worker.js": "/palabros/service-worker.js",
     "index.html": "/palabros/index.html",
-    "main.01d6c47a.css.map": "/palabros/static/css/main.01d6c47a.css.map",
-    "main.149c9488.js.map": "/palabros/static/js/main.149c9488.js.map"
+    "main.ccb382e7.css.map": "/palabros/static/css/main.ccb382e7.css.map",
+    "main.49123afe.js.map": "/palabros/static/js/main.49123afe.js.map"
   },
   "entrypoints": [
-    "static/css/main.01d6c47a.css",
-    "static/js/main.149c9488.js"
+    "static/css/main.ccb382e7.css",
+    "static/js/main.49123afe.js"
   ]
 }
