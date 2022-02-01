@@ -1,7 +1,16 @@
+:root {
+  overflow: hidden;
+  
+  & * {
+    overflow: hidden;
+  }
+}
+
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   background-color: #222831;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
 }
 
@@ -9,9 +18,116 @@ body {
   align-items: center;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   min-height: 100vh;
   min-width: 100vw;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin-top: 3vh;
+  max-width: 60vh;
+  width: 95vw;
+
+  & > .newGame {
+    place-self: center start;
+
+    & > button {
+      align-items: center;
+      background-color: #393E46;
+      border: 3px solid #393E46;
+      border-radius: 0.5vh;
+      color: #EEEEEE;
+      font-weight: bolder;
+      justify-content: center;
+      padding: .5rem 1rem;
+      transition: border 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      user-select: none;
+  
+      &:hover {
+        border: 3px solid #84C69B;
+      }
+    }
+  }
+
+  & > .controls {
+    place-self: center end;
+    max-width: calc((95vw / 3) - 1rem);
+
+    & > label {
+      align-items: center;
+      background-color: #393E46;
+      border-radius: 0.5vh;
+      display: flex;
+      color: #EEEEEE;
+      flex-flow: row nowrap;
+      font-size: 0.8rem;
+      font-weight: bolder;
+      justify-content: space-between;
+      margin: 0.35rem 0;
+      padding: 0.5rem;
+
+      & > select {
+        background-color: transparent;
+        border: 0;
+        color: #EEEEEE;
+        margin-left: 0.5rem;
+        text-align: center;
+
+        & > option {
+          color: #393E46;
+        }
+
+        &:focus, &:active {
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+h1 {
+  display: flex;
+  flex-flow: row wrap;
+  place-self: center center;
+  font-size: 0.8rem;
+  margin: 0;
+  width: calc(4 * (2.5rem + 1px));
+
+  & > span {
+    align-items: center;
+    aspect-ratio: 1;
+    background-color: #393E46;
+    border: 2px solid #393E46;
+    border-radius: 0.5vh;
+    color: #EEEEEE;
+    display: flex;
+    font-weight: bolder;
+    justify-content: center;
+    margin: 0.25vh;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    user-select: none;
+    width: 2rem;
+
+    &.green {
+      border: 2px solid #84C69B;
+      color: #84C69B;
+    }
+
+    &.yellow {
+      border: 2px solid #FFC045;
+      color: #FFC045;
+    }
+
+    &.gray {
+      border: 2px solid #26282B;
+      color: #26282B;
+    }
+  }
 }
 
 .row {
@@ -23,6 +139,10 @@ body {
   max-width: 40vh;
   width: 95vw;
 
+  &.isDisabled > .cell {
+    opacity: 0.5;
+  }
+
   & > .cell {
     align-items: center;
     aspect-ratio: 1;
@@ -31,11 +151,10 @@ body {
     border-radius: 1vh;
     color: #EEEEEE;
     display: flex;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 200%;
     font-weight: bolder;
     justify-content: center;
-    transition: border 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     user-select: none;
 
     &.focus {
@@ -46,16 +165,21 @@ body {
 
     &.green {
       background-color: #84C69B;
+      border: 3px solid #84C69B;
       color: #26282B;
+      opacity: 1;
     }
 
     &.yellow {
       background-color: #FFC045;
+      border: 3px solid #FFC045;
       color: #26282B;
+      opacity: 1;
     }
 
     &.gray {
-      color: #26282B
+      color: #26282B;
+      opacity: 1;
     }
   }
 }
@@ -64,7 +188,7 @@ body {
   display: grid;
   grid-auto-flow: row;
   grid-template-columns: repeat(20, 1fr);
-  margin: 0.75vh 0;
+  margin: 3vh;
   max-width: 60vh;
   width: calc(100vw - 1vh);
 
@@ -78,13 +202,12 @@ body {
 
   & > button {
     align-items: center;
-    aspect-ratio: 1;
+    aspect-ratio: 0.9;
     background-color: #393E46;
-    border: 0;
+    border: 3px solid #393E46;
     border-radius: 0.5vh;
     color: #EEEEEE;
     display: flex;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 110%;
     font-weight: bolder;
     grid-column: auto / span 2;
@@ -109,16 +232,22 @@ body {
 
     &.green {
       background-color: #84C69B;
+      border: 3px solid #84C69B;
       color: #26282B;
     }
 
     &.yellow {
       background-color: #FFC045;
+      border: 3px solid #FFC045;
       color: #26282B;
     }
 
     &.gray {
       color: #26282B
+    }
+
+    &.inWinner {
+      border: 3px solid #84C69B;
     }
   }
 }

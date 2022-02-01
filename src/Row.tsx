@@ -53,8 +53,8 @@ const Row: VoidFunctionComponent<Props> = ({ checkWord, isDisabled, wordLength =
   }, [isDisabled, onDocumentKeyup]);
 
   return (
-    <div className="row">
-      {inputs.current.map((_, ix) => (
+    <div className={classNames(['row', { isDisabled }])}>
+      {Array.from({ length: wordLength }).map((_, ix) => (
         <div
           className={classNames([
             'cell',

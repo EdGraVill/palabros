@@ -1,7 +1,6 @@
 import classNames from 'classnames';
 import type { VoidFunctionComponent } from 'react';
 import { useCallback, useEffect, useState } from 'react';
-import type { Flag } from './useWordle';
 
 const keys = [
   'Q',
@@ -35,40 +34,8 @@ const keys = [
   'Backspace',
 ];
 
-const layout = [
-  'Q',
-  'W',
-  'E',
-  'R',
-  'T',
-  'Y',
-  'U',
-  'I',
-  'O',
-  'P',
-  'A',
-  'S',
-  'D',
-  'F',
-  'G',
-  'H',
-  'J',
-  'K',
-  'L',
-  'Ñ',
-  '↵',
-  'Z',
-  'X',
-  'C',
-  'V',
-  'B',
-  'N',
-  'M',
-  '⇤',
-];
-
 interface Props {
-  letterStatus: Record<string, Flag>;
+  letterStatus: Record<string, string>;
 }
 
 export const Keyboard: VoidFunctionComponent<Props> = ({ letterStatus }) => {
@@ -119,7 +86,7 @@ export const Keyboard: VoidFunctionComponent<Props> = ({ letterStatus }) => {
 
   return (
     <div className="keyboard">
-      {keys.map((key, ix) => (
+      {keys.map((key) => (
         <button
           className={classNames([
             letterStatus[key] ?? '',
@@ -132,7 +99,9 @@ export const Keyboard: VoidFunctionComponent<Props> = ({ letterStatus }) => {
           onTouchEnd={onTouchEnd}
           onTouchStart={onTouchStart(key)}
         >
-          {layout[ix]}
+          {key === 'Enter' && '↵'}
+          {key === 'Backspace' && '⇤'}
+          {key.length === 1 && key}
         </button>
       ))}
     </div>

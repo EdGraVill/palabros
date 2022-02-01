@@ -1,21 +1,31 @@
 import { useCallback, useState } from 'react';
+import Header from './Header';
 import Keyboard from './Keyboard';
 import Row from './Row';
-import type { Flag } from './useWordle';
+import type { WordLength } from './useWordle';
 import useWordle from './useWordle';
 
 function App() {
+  const [wordLength, setWordLength] = useState<WordLength>(5);
   const [nthTryMax, setNthTryMax] = useState(5);
-  const [isLoading, checkWord, nthTry] = useWordle(5, nthTryMax);
+  const [isLoading, checkWord, nthTry, newGame] = useWordle(wordLength, nthTryMax);
   const [isWinner, setWinnerState] = useState(false);
-  const [letterStatus, setLetterStatus] = useState<Record<string, Flag>>({});
+  const [letterStatus, setLetterStatus] = useState<Record<string, string>>({});
+  const [seed, setSeed] = useState<number[]>(Array.from({ length: nthTryMax }).map(Math.random));
+
+  const onNewGame = useCallback(() => {
+    setWinnerState(false);
+    setLetterStatus({});
+    setSeed(Array.from({ length: nthTryMax }).map(Math.random));
+    newGame();
+  }, [newGame]);
 
   const onCheckWord = useCallback(
     (word: string) => {
       const result = checkWord(word);
 
-      setLetterStatus((currentStatus) => ({
-        ...word.split('').reduce((acc, letter, ix) => {
+      setLetterStatus((currentStatus) => {
+        const newStatus = word.split('').reduce((acc, letter, ix) => {
           if (
             !currentStatus[letter] ||
             currentStatus[letter] === 'gray' ||
@@ -25,8 +35,18 @@ function App() {
           }
 
           return acc;
-        }, currentStatus),
-      }));
+        }, currentStatus);
+
+        return {
+          ...(result.rightWord || '').split('').reduce(
+            (acc, letter) => ({
+              ...acc,
+              [letter]: acc[letter] ? `${acc[letter]} inWinner` : 'inWinner',
+            }),
+            newStatus,
+          ),
+        };
+      });
 
       setWinnerState(result.isWinner);
 
@@ -37,9 +57,21 @@ function App() {
 
   return (
     <div className="App">
+      <Header
+        newGame={onNewGame}
+        nthTryMax={nthTryMax}
+        setNthTryMax={setNthTryMax}
+        setWordLength={setWordLength}
+        wordLength={wordLength}
+      />
       <div>
-        {Array.from({ length: nthTryMax }).map((_, ix) => (
-          <Row checkWord={onCheckWord} isDisabled={isWinner || isLoading || nthTry !== ix} key={ix} />
+        {seed.map((key, ix) => (
+          <Row
+            checkWord={onCheckWord}
+            isDisabled={isWinner || isLoading || nthTry !== ix}
+            key={key}
+            wordLength={wordLength}
+          />
         ))}
       </div>
       <Keyboard letterStatus={letterStatus} />
